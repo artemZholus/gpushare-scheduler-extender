@@ -13,4 +13,3 @@ evictDevicePluginImage: device-plugin-evict:latest
 extenderImage: k8s-gpushare-schd-extender:latest
 
 devicePluginImage: k8s-gpushare-plugin:latest
-
