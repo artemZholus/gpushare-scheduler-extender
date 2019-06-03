@@ -1,8 +1,8 @@
 # GPU Sharing Scheduler Extender in Kubernetes 
 
-[![CircleCI](https://circleci.com/gh/AliyunContainerService/gpushare-scheduler-extender.svg?style=svg)](https://circleci.com/gh/AliyunContainerService/gpushare-scheduler-extender)
-[![Build Status](https://travis-ci.org/AliyunContainerService/gpushare-scheduler-extender.svg?branch=master)](https://travis-ci.org/AliyunContainerService/gpushare-scheduler-extender) 
-[![Go Report Card](https://goreportcard.com/badge/github.com/AliyunContainerService/gpushare-scheduler-extender)](https://goreportcard.com/report/github.com/AliyunContainerService/gpushare-scheduler-extender)
+[![CircleCI](https://circleci.com/gh/artemZholus/gpushare-scheduler-extender.svg?style=svg)](https://circleci.com/gh/artemZholus/gpushare-scheduler-extender)
+[![Build Status](https://travis-ci.org/artemZholus/gpushare-scheduler-extender.svg?branch=master)](https://travis-ci.org/artemZholus/gpushare-scheduler-extender) 
+[![Go Report Card](https://goreportcard.com/badge/github.com/artemZholus/gpushare-scheduler-extender)](https://goreportcard.com/report/github.com/artemZholus/gpushare-scheduler-extender)
 
 
 ## Overview
@@ -36,14 +36,14 @@ You can check this [User Guide](docs/userguide.md).
 ### Scheduler Extender
 
 ```bash
-git clone https://github.com/AliyunContainerService/gpushare-scheduler-extender.git && cd gpushare-scheduler-extender
+git clone https://github.com/artemZholus/gpushare-scheduler-extender.git && cd gpushare-scheduler-extender
 docker build -t cheyang/gpushare-scheduler-extender .
 ```
 
 ### Device Plugin
 
 ```bash
-git clone https://github.com/AliyunContainerService/gpushare-device-plugin.git && cd gpushare-device-plugin
+git clone https://github.com/artemZholus/gpushare-device-plugin.git && cd gpushare-device-plugin
 docker build -t cheyang/gpushare-device-plugin .
 ```
 
@@ -52,9 +52,9 @@ docker build -t cheyang/gpushare-device-plugin .
 - golang > 1.10
 
 ```bash
-mkdir -p $GOPATH/src/github.com/AliyunContainerService
-cd $GOPATH/src/github.com/AliyunContainerService
-git clone https://github.com/AliyunContainerService/gpushare-device-plugin.git
+mkdir -p $GOPATH/src/github.com/artemZholus
+cd $GOPATH/src/github.com/artemZholus
+git clone https://github.com/artemZholus/gpushare-device-plugin.git
 cd gpushare-device-plugin
 go build -o $GOPATH/bin/kubectl-inspect-gpushare-v2 cmd/inspect/*.go
 ```
@@ -71,7 +71,7 @@ go build -o $GOPATH/bin/kubectl-inspect-gpushare-v2 cmd/inspect/*.go
 
 ## Related Project
 
-- [gpushare device plugin](https://github.com/AliyunContainerService/gpushare-device-plugin.git)
+- [gpushare device plugin](https://github.com/artemZholus/gpushare-device-plugin.git)
 
 ## Roadmap
 

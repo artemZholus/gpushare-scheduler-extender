@@ -24,9 +24,9 @@ Enable the Nvidia runtime as your default runtime on your node. To do this, plea
 
 ```bash
 cd /etc/kubernetes/
-curl -O https://raw.githubusercontent.com/AliyunContainerService/gpushare-scheduler-extender/master/config/scheduler-policy-config.json
+curl -O https://raw.githubusercontent.com/artemZholus/gpushare-scheduler-extender/master/config/scheduler-policy-config.json
 cd /tmp/
-curl -O https://raw.githubusercontent.com/AliyunContainerService/gpushare-scheduler-extender/master/config/gpushare-schd-extender.yaml
+curl -O https://raw.githubusercontent.com/artemZholus/gpushare-scheduler-extender/master/config/gpushare-schd-extender.yaml
 kubectl create -f gpushare-schd-extender.yaml
 ```
 
@@ -60,9 +60,9 @@ Here is the sample of the modified [kube-scheduler.yaml](../config/kube-schedule
 ## 3\. Deploy Device Plugin
 
 ```bash
-wget https://raw.githubusercontent.com/AliyunContainerService/gpushare-device-plugin/master/device-plugin-rbac.yaml
+wget https://raw.githubusercontent.com/artemZholus/gpushare-device-plugin/master/device-plugin-rbac.yaml
 kubectl create -f device-plugin-rbac.yaml
-wget https://raw.githubusercontent.com/AliyunContainerService/gpushare-device-plugin/master/device-plugin-ds.yaml
+wget https://raw.githubusercontent.com/artemZholus/gpushare-device-plugin/master/device-plugin-ds.yaml
 kubectl create -f device-plugin-ds.yaml
 ```
 
@@ -96,6 +96,6 @@ sudo mv ./kubectl /usr/bin/kubectl
 
 ```bash
 cd /usr/bin/
-wget https://github.com/AliyunContainerService/gpushare-device-plugin/releases/download/v0.3.0/kubectl-inspect-gpushare
+wget https://github.com/artemZholus/gpushare-device-plugin/releases/download/v0.3.0/kubectl-inspect-gpushare
 chmod u+x /usr/bin/kubectl-inspect-gpushare
 ```
