@@ -10,6 +10,3 @@ cd $BASEDIR
 
 # docker build --no-cache -t $IMAGE -f $FILE $BASEDIR
 docker build -t schd-extender-deployer:latest .
-
-docker tag schd-extender-deployer:latest schd-extender-deployer:latest
-
