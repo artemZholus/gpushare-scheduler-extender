@@ -18,7 +18,7 @@ Allocated/Total GPU Memory In Cluster:
 
 > For more details, please run `kubectl inspect gpushare -d`
 
-2. To request GPU sharing, you just need to specify `aliyun.com/gpu-mem`
+2. To request GPU sharing, you just need to specify `nvidia.com/gpu-mem`
 
 ```yaml
 apiVersion: apps/v1beta1
@@ -49,7 +49,7 @@ spec:
         resources:
           limits:
             # GiB
-            aliyun.com/gpu-mem: 3
+            nvidia.com/gpu-mem: 3
 ```
 
 > Notice that the GPU memory of each GPU is 3 GiB, 3 GiB indicates one third of the GPU.
