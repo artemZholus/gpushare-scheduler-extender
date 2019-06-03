@@ -9,6 +9,6 @@ TIMESTAMP=$(date +%Y%m%d%H%M)
 cd $BASEDIR
 
 # docker build --no-cache -t $IMAGE -f $FILE $BASEDIR
-docker build -t registry.cn-hangzhou.aliyuncs.com/acs/device-plugin-evict:$TIMESTAMP .
+docker build -t device-plugin-evict:latest .
 
-docker tag registry.cn-hangzhou.aliyuncs.com/acs/device-plugin-evict:$TIMESTAMP cheyang/device-plugin-evict:$TIMESTAMP
+docker tag device-plugin-evict:latest device-plugin-evict:latest

@@ -9,7 +9,7 @@ TIMESTAMP=$(date +%Y%m%d%H%M)
 cd $BASEDIR
 
 # docker build --no-cache -t $IMAGE -f $FILE $BASEDIR
-docker build -t registry.cn-hangzhou.aliyuncs.com/acs/schd-extender-deployer:$TIMESTAMP .
+docker build -t schd-extender-deployer:latest .
 
-docker tag registry.cn-hangzhou.aliyuncs.com/acs/schd-extender-deployer:$TIMESTAMP cheyang/schd-extender-deployer:$TIMESTAMP
+docker tag schd-extender-deployer:latest schd-extender-deployer:latest
 

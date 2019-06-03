@@ -4,13 +4,13 @@
 
 masterCount: 3
 
-kubeVersion: v1.12.6-aliyun.1
+kubeVersion: v1.14.2
 
-schdInstallerImage: cheyang/schd-extender-deployer:201904171935
+schdInstallerImage: schd-extender-deployer:latest
 
-evictDevicePluginImage: cheyang/device-plugin-evict:201904172342
+evictDevicePluginImage: device-plugin-evict:latest
 
-extenderImage: registry.cn-hangzhou.aliyuncs.com/acs/k8s-gpushare-schd-extender:1.11-d170d8a
+extenderImage: k8s-gpushare-schd-extender:latest
 
-devicePluginImage: registry.cn-hangzhou.aliyuncs.com/acs/k8s-gpushare-plugin:v2-1.11-aff8a23
+devicePluginImage: k8s-gpushare-plugin:latest
 
