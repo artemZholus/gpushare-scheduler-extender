@@ -58,10 +58,10 @@ spec:
 
 ```bash
 # The total amount of GPU memory on the current device (GiB)
-ALIYUN_COM_GPU_MEM_DEV=15 
+NVIDIA_COM_GPU_MEM_DEV=15 
 
 # The GPU Memory of the container (GiB)
-ALIYUN_COM_GPU_MEM_CONTAINER=3
+NVIDIA_COM_GPU_MEM_CONTAINER=3
 ```
 
 Limit GPU memory by setting fraction through TensorFlow API

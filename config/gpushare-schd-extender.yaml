@@ -91,6 +91,7 @@ spec:
       containers:
         - name: gpushare-schd-extender
           image: k8s-gpushare-schd-extender:latest
+          imagePullPolicy: Never
           env:
           - name: LOG_LEVEL
             value: debug
